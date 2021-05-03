@@ -5,11 +5,15 @@ using namespace std;
 namespace pandemic{
 
     Board::Board(){
+        cubes[City::Kinshasa]=0;
+        cubes[City::MexicoCity]=0;
+        cubes[City::HoChiMinhCity]=0;
+        cubes[City::Chicago]=0;
+
         // ifstream file{"cities_map.txt"};
         // read_city_file(file);
 
     }
-
 
 
 
@@ -18,9 +22,11 @@ namespace pandemic{
         //  string line;
         //  string main_city;
         //  string nighbor_city;
-        //  Color city_color;
         //  string color;
+
+        //  Color city_color;
         //  City c;
+         
 
         //  while(getline(file,line)){
         //      u_int i=0;
@@ -29,6 +35,7 @@ namespace pandemic{
         //          i++;
 
         //      }
+        //      c=city_str[main_city];
         //      i++;
         //      while(line.at(i)!=' '){
         //          color+=line.at(i);
@@ -44,10 +51,11 @@ namespace pandemic{
                     
                     
         //          }
-        //          c=city_str[main_city];
+                
         //          City ni_city=city_str[nighbor_city];
         //          connections[c].push_back(ni_city);
         //          i++;
+                 
                 
 
         //      }
@@ -59,19 +67,25 @@ namespace pandemic{
     }
 
     int& Board::operator[](City c) {
-    //    if(this->cubes.find(c)!= this->cubes.end()){
-    //        return cubes[c];
-    //    }else{
-    //        throw invalid_argument("ther is no such city in board");
-    //    }
-    int *temp=NULL;
-    return *temp;
+       if(this->cubes.find(c)!= this->cubes.end()){
+           return cubes[c];
+       }else{
+           throw invalid_argument("ther is no such city in board");
+       }
+
+    // try{
+    //         return this->cubes.at(c);
+    //     }catch(const std::out_of_range& e) {
+    //         throw ("ADD TEXT FOR ERROR");
+    //     }
+    
 
     }
 
     bool Board::is_clean(){
 
-        return cubes.empty();
+        // return cubes.empty();
+        return false;
     }
 
     void Board::remove_cures(){
@@ -82,7 +96,7 @@ namespace pandemic{
         return out;
     }
 
-    static  map<string, City> city_str{ {"Algiers", City::Algiers}, {"Atlanta", City::Atlanta},
+     map<string, City> city_str{ {"Algiers", City::Algiers}, {"Atlanta", City::Atlanta},
         {"Baghdad", City::Baghdad}, {"Bangkok", City::Bangkok},
         {"Beijing", City::Beijing}, {"Beijing", City::Beijing},
         {"Bogota", City::Bogota}, {"BuenosAires", City::BuenosAires},
@@ -105,7 +119,7 @@ namespace pandemic{
         {"Tehran", City::Tehran}, {"Tokyo", City::Tokyo}, {"Washington", City::Washington}
     };
 
-    static  map<string, Color> color_str{
+     map<string, Color> color_str{
         {"Blue", Color::Blue}, {"Black", Color::Black}, {"Red", Color::Red}, { "Yellow", Color::Yellow }
     }; 
             

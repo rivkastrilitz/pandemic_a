@@ -6,7 +6,7 @@ using pandemic::Board;
 
 namespace pandemic{
 
-    std::vector<City>cardes(48);
+    // std::vector<City>cardes(48);
 
     Player::Player(Board b ,City c){
         this->board=b;

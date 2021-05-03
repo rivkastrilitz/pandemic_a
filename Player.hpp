@@ -37,7 +37,7 @@ namespace pandemic{
             Board board;
             // std::string player_role;
             City city;
-            std::vector<City>cardes(int) ;
+            // std::vector<City>cardes(int) ;
 
 
 

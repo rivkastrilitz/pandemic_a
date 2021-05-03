@@ -1,6 +1,56 @@
  # pragma once 
-
-
+#include <string>
+using std::string;
+// class City{
+// string Algiers="Algiers",
+//  Atlanta="Atlanta",
+//  Baghdad= "Baghdad",
+//     Baghdad="Bangkok",
+//         Beijing="Beijing",
+//     Bogota="Bogota",
+//        BuenosAires= "BuenosAires",
+//         Cairo="Cairo",
+//         Chennai="Chennai",
+//         Chicago="Chicago",
+//         Delhi="Delhi",
+//         Essen="Essen",
+//         HoChiMinhCity="HoChiMinhCity",
+//         HongKong="HongKong",
+//         Istanbul="Istanbul",
+//         Jakarta="Jakarta",
+//         Johannesburg="Johannesburg",
+//         Karachi="Karachi",
+//         Khartoum="Khartoum",
+//         Kinshasa="Kinshasa",
+//         Kolkata="Kolkata",
+//         Lagos="Lagos",
+//         Lima="Lima",
+//         London="London",
+//         LosAngeles="LosAngeles",
+//         Madrid="Madrid",
+//         Manila="Manila",
+//         MexicoCity="MexicoCity",
+//         Miami="Miami",
+//         Milan="Milan",
+//         Montreal="Montreal",
+//         Moscow="Moscow",
+//         Mumbai="Mumbai",
+//         NewYork="NewYork",
+//         Osaka="Osaka",
+//         Paris="Paris",
+//         Riyadh="Riyadh",
+//         SanFrancisco="SanFrancisco",
+//         Santiago="Santiago",
+//         SaoPaulo="SaoPaulo",
+//         Seoul="Seoul",
+//         Shanghai="Shanghai",
+//         StPetersburg="StPetersburg",
+//         Sydney="Sydney",
+//         Taipei="Taipei",
+//         Tehran="Tehran",
+//         Tokyo="Tokyo",
+//         Washington="Washington";
+// };
     
     enum City{
         Algiers,
